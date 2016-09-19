@@ -1,1 +1,1 @@
-# the_c_programming_language
+# The C Programming Language reading notes
