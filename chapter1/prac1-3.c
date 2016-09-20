@@ -5,11 +5,11 @@ int main(){
 	int lower, upper, step;
 	
 	lower = 0;		/* 温度表的下限 */
-	upper = 300;	/* 温度表的上限 */
+	upper = 300;	        /* 温度表的上限 */
 	step = 20;		/* 步长 */
 	
 	fahr = lower;
-	printf("fahr\tcelsius\n");	
+	printf("fahr\tcelsius\n");	/* print the title */
 	while (fahr <= upper){
 		celsius = 5 * (fahr - 32) / 9;
 		printf("%4d\t%7d\n", fahr, celsius);
