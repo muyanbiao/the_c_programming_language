@@ -1,5 +1,5 @@
 #include <stdio.h>
-/* 验证表达式 getchar() != EOF 的值时0还是1 */
+/* 验证表达式 getchar() != EOF 的值是0还是1 */
 int main(){
 	int c = getchar();
 	while ((c = getchar())){
