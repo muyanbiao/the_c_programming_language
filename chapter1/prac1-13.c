@@ -14,11 +14,11 @@ int main(){
 
 	while ((c = getchar()) != EOF){
 		if (c == ' ' || c == '\t' || c == 'n'){
-			state = OUT;
 			if (state == IN){
 				lw[nw++] = lwtemp;
 				lwtemp = 0;
 			}
+			state = OUT;
 		} else {
 			state = IN;
 			++lwtemp;
@@ -26,9 +26,12 @@ int main(){
 	}
 
 	for (int i = 0; i < nw; ++i){
-		printf("lw: %d", lw[i]);
+		printf("%d | ", i);
+		for (int j = 0; j < lw[i]; ++j){
+			printf("*");
+		}
+		printf("\n");
 	}
-	printf("\n");
 
 	return 0;
 }
