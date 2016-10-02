@@ -19,10 +19,7 @@ int main(){
 		}
 	}
 	if (max > 0){
-		for (int i = 0; i < max; ++i){
-			printf("%s", longest);		
-		}
-		printf("\n");
+		printf("%s", longest);		
 	}
 	
 	return 0;
@@ -50,7 +47,7 @@ void custom_copy(char to[], char from[]){
 	int i;
 
 	i = 0;
-	while ((to[i] = from[i] != '\0'))
+	while ((to[i] = from[i]) != '\0')
 		++i;
 }
 
