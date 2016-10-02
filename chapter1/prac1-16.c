@@ -13,18 +13,14 @@ int main(){
 
 	max = 0;
 	while ((len = custom_getline(line, MAXLINELEN)) > 0){
-		//printf("%d, %s", len, line);
+		printf("%d, %s", len, line);
 		if (len > max){
 			max = len;
 			custom_copy(longest, line);
 		}
 	}
 	if (max > 0){
-		for (int i = 0; i < max; ++i){
-			putchar(longest[i]);
-			//printf("%s", longest);		
-		}
-		printf("\n");
+		printf("%s", longest);		
 	}
 	
 	return 0;
@@ -33,7 +29,8 @@ int main(){
 /* getline函数：将一行读入到s中，并返回其长度 */
 int custom_getline(char s[], int lim){
 	int c, i, j;
-
+	
+	j = 0;
 	for (i = 0; (c = getchar()) != EOF && c != '\n'; ++i)
 		if (i < lim - 2){
 			s[j] = c;
@@ -56,7 +53,7 @@ void custom_copy(char to[], char from[]){
 	int i;
 
 	i = 0;
-	while ((to[i] = from[i] != '\0'))
+	while ((to[i] = from[i]) != '\0')
 		++i;
 }
 
