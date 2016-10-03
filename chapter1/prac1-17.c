@@ -1,5 +1,5 @@
 #include <stdio.h>
-/* 读入一组文本行，打印任意长度的输入行的长度，并尽可能多地打印文本 */
+/* 打印长度大于80格字符的所有输入行 */
 #define MAXLINELEN 1000 		/* 可以输入的最长行长度 */
 
 int custom_getline(char line[], int maxlinelen);
