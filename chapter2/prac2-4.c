@@ -1,7 +1,7 @@
 #include <stdio.h>
 #define MAXLINE 1000
 
-void squeeze(char s1[], char s2[]);		/* squeeze函数：从字符串s中删除字符c */
+void squeeze(char s1[], char s2[]);		/* squeeze函数：将字符串s1中的任何与字符串s2中字符匹配的字符都删除 */
 
 int custom_getline(char s[], int lim);
 
