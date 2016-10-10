@@ -15,7 +15,7 @@ int main(){
 	while((len_line1 = custom_getline(line1, MAXLINE)) > 0){
 		len_line2 = custom_getline(line2, MAXLINE);
 		if (len_line2 > 0){
-			squeeze(line1, line2);			/* 删除读取的每行字符串中的字符 'a' */
+			squeeze(line1, line2);			/* 删除line1中任何与字符串line2中字符匹配的字符 */
 			printf("After squeeze: %s", line1);
 		}
 	}
