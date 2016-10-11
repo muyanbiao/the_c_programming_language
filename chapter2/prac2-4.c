@@ -16,7 +16,7 @@ int main(){
 		len_line2 = custom_getline(line2, MAXLINE);
 		if (len_line2 > 0){
 			squeeze(line1, line2);			/* 删除line1中任何与字符串line2中字符匹配的字符 */
-			printf("After squeeze: %s", line1);
+			printf("After squeeze: %s\n", line1);
 		}
 	}
 
@@ -25,11 +25,13 @@ int main(){
 
 /* squeeze函数：从字符串s中删除字符c */
 void squeeze(char s1[], char s2[]){
-	int i, j;
+	int i, j, k;
 
-	for (i = j = 0; s1[i] != '\0'; i++)
-		if (s1[i] != s2[j])
-			s1[j++] = s1[i];
+	for (k = 0; s2[k] != '\0'; k++){
+		for (i = j = 0; s1[i] != '\0'; i++)
+			if (s1[i] != s2[k])
+				s1[j++] = s1[i];
+	}
 
 	s1[j] = '\0';
 }
