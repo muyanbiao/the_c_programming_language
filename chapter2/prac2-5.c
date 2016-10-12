@@ -1,7 +1,7 @@
 #include <stdio.h>
 #define MAXLINE 1000
 
-int any(char s1[], char s2[]);		/* 将字符串s2中的任意字符在字符串s1中第一次出现的位置作为结果返回 */ 
+int any(char s1[], char s2[]);		/* 将字符串s2中的任一字符在字符串s1中第一次出现的位置作为结果返回 */ 
 
 int custom_getline(char s[], int lim);
 
