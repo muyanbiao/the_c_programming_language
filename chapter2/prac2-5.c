@@ -24,7 +24,7 @@ int main(){
 	return 0;
 }
 
-/* squeeze函数：从字符串s中删除字符c */
+/* 将字符串s2中的任一字符在字符串s1中第一次出现的位置作为结果返回 */ 
 int any(char s1[], char s2[]){
 	int i, k;
 	int start = MAXLINE;		/* s2中任一字符在s1中出现的第一次位置，默认为-1，即未找到字符 */
