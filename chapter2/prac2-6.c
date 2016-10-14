@@ -7,3 +7,7 @@ int main(){
 	
 	return 0;
 }
+
+void setbits(x, p, n, y){
+
+}
